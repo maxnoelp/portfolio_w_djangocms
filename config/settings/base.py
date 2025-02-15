@@ -68,7 +68,7 @@ DJANGO_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # "django.contrib.humanize", # Handy template tags
-    "djangocms_admin_style",
+    "djangocms_simple_admin_style",
     "django.contrib.admin",
     "django.forms",
 ]
@@ -82,8 +82,6 @@ DJANGO_CMS_APPS = [
     "djangocms_versioning",
     "djangocms_alias",
     "parler",
-    "djangocms_text",
-    "djangocms_text.contrib.text_ckeditor4",
     "djangocms_frontend",
     "djangocms_frontend.contrib.accordion",
     "djangocms_frontend.contrib.alert",
@@ -112,17 +110,17 @@ THIRD_PARTY_APPS = [
     "allauth.socialaccount",
     "django_celery_beat",
     "webpack_loader",
+    "djangocms_text",
 ]
 
 LOCAL_APPS = [
     "portfolio.users",
     "portfolio.cms_plugins",
+    "portfolio.projects",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS + DJANGO_CMS_APPS
-
-TEXT_EDITOR = "djangocms_text.contrib.text_ckeditor4.ckeditor4"
 
 CMS_CONFIRM_VERSION4 = True
 DJANGOCMS_VERSIONING_ALLOW_DELETING_VERSIONS = True

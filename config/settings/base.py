@@ -83,6 +83,7 @@ DJANGO_CMS_APPS = [
     "djangocms_alias",
     "parler",
     "djangocms_text",
+    "djangocms_text.contrib.text_ckeditor4",
     "djangocms_frontend",
     "djangocms_frontend.contrib.accordion",
     "djangocms_frontend.contrib.alert",
@@ -120,6 +121,8 @@ LOCAL_APPS = [
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS + DJANGO_CMS_APPS
+
+TEXT_EDITOR = "djangocms_text.contrib.text_ckeditor4.ckeditor4"
 
 CMS_CONFIRM_VERSION4 = True
 DJANGOCMS_VERSIONING_ALLOW_DELETING_VERSIONS = True

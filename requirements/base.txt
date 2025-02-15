@@ -61,7 +61,7 @@ typing-extensions==4.12.2
 urllib3==2.2.3
 uwsgi==2.0.28
 webencodings==0.5.1
-wheel==0.45.0
+wheel==0.45.1
 
 djangocms-seo==0.1.2
 django-comments-xtd==2.10.2
